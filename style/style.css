@@ -1,48 +1,14 @@
 
 /* página inteira */
 body{
-    background-image: url("https://free4kwallpapers.com/uploads/originals/2015/08/24/wallpaper-from-the-latest-el-capitan-developer-build.jpg");
-    background-size: auto;
+    background-image: url("https://mocah.org/thumbs/963368-digital-digital-art-artwork-simple-simple-background.jpg");
+    background-size: cover;
     backdrop-filter: blur(8px);
     background-position: center;
     font-family: arial, helvetica, sans-serif;
     font-size: 16px;
     margin: 0;
 }
-
-/* Barra de navegação
-.menu{
-    position: fixed;
-    width: 100%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    top: 0;
-    overflow: hidden;
-    background-color: #333;
-    box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2), 0px 6px 15px 0px rgba(0,0,0,0.19);
-}
-
-.menu li {
-    float: left;
-}
-
-.menu li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 20px 28px;
-    text-decoration: none;
-}
-
-.menu li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-    background-color: #16a81e;
-}
-/* fim da barra de navegação */
 
 /* div do background */
 .bg {
@@ -55,37 +21,27 @@ body{
     margin-right: 5%;
     text-align: center;
     color: white;
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s;
     box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2), 0px 6px 15px 0px rgba(0,0,0,0.19);
+}
+
+/* animação de abertura */
+@-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+@keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
 }
 
 #paginas{
     display: inline-block
-}
-
-/* div dos botões do rodape */
-#rodape{
-    width: 100%;
-}
-
-/* Botões gerais */
-.buttom{
-    background-color: #16a81e;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 30px;
-}
-
-/* div dos videos
-#videos{
-    text-align: center;
-    
 }
 
 /* titulo principal do site */
@@ -100,6 +56,7 @@ h2{
     padding-bottom: 8px;
 }
 
+/* Formatações do formulário */
 form {
     font-size: 20px;
 }
@@ -117,6 +74,7 @@ input[type=text], [type=number], [type=tel] {
     box-sizing: border-box;
 }
 
+/* Opções de seleção de sexo (até a linha 102) */
 .options{
     display: inline-block;
     position: relative;
@@ -159,7 +117,7 @@ input[type=text], [type=number], [type=tel] {
     display: block;
 }
 
-
+/* caixas de input */
 input[type=submit], [type=reset]{
     background-color: #FF7200;
     border: none;
@@ -174,6 +132,7 @@ input[type=submit], [type=reset]{
     border-radius: 30px;
 }
 
+/* botão para retornar */
 .last-page {
     background-color: #FF7200;
     border: none;

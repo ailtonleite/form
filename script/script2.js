@@ -11,7 +11,6 @@ function enviada2() {
     if (rua == "" || bairro == "" || cidade == "" || numero == "" || estado == "" || cep == "" || phone == "" ) {
         return;
     } else {
-        //campos preenchhidos mensagem acionada.
         alert("Enviado com sucesso!");
     }
 }

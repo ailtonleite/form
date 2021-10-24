@@ -7,7 +7,6 @@ function enviada() {
     if (nome == "" || rg == "" || cpf == "" ) {
         return;
     } else {
-        //campos preenchhidos mensagem acionada.
         alert("Enviado com sucesso!");
     }
 }

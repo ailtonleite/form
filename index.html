@@ -4,16 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
     <link rel="stylesheet" href="style/style.css">
     </head>
 
     <body>
-        <div id="bg">
-
-
-
-        </div>
+        <div class="bg">
+                <h1>Bem vindo!</h1>
+            <h2>Preencha as informações abaixo:</h2>
+            <br>
+            <form id="pessoais" action="page2.html">
+                <label for="nome"> Nome: </label><br>
+                <input id="nome" type="text" placeholder="Digite o seu nome" required> <br>
+                <label for="rg"> RG: </label> <br>
+                <input id="rg" type="number" placeholder="Digite o seu RG" required> <br>
+                <label for="cpf"> CPF: </label> <br>
+                <input id="cpf" type="number" placeholder="Digite o seu CPF" required> <br><br>
+                <div id="sexo">
+                        <label for="sexo"> Sexo: </label> <br><br>
+                    <label class="options">Masculino
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                    </label> <br>
+                    <label class="options">Feminino
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label><br>
+                    <label class="options">Outro
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <br><br>
+                <input id="enviar" type="submit" value="Próximo" onclick="enviada()"> <br>
+            </form>
+            </div>
 
     </body>
+    <script src="script/script.js"> </script>
+
 </html>

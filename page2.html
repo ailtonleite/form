@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 2</title>
+    <link rel="stylesheet" href="style/style.css">
+    </head>
+
+    <body>
+        <div class="bg">
+            <h1>Bem vindo!</h1>
+            <h2>Preencha as informações abaixo:</h2>
+            <form id="endereco" action="page3.html">
+                <label for="rua"> Rua: </label><br>
+                <input id="rua" type="text" placeholder="Informe a sua rua" required> <br>
+                <label for="bairro"> Bairro: </label> <br>
+                <input id="bairro" type="text" placeholder="Informe o seu bairro" required> <br>
+                <label for="numero"> Nº da residência:: </label> <br>
+                <input id="numero" type="number" placeholder="Informe o número de sua residência" required> <br>
+                <label for="cidade"> Cidade: </label> <br>
+                <input id="cidade" type="text" placeholder="Informe a sua cidade" required> <br>
+                <label for="Estado"> Estado: </label> <br>
+                <input id="Estado" type="text" placeholder="Informe o seu estado" required> <br>
+                <label for="cep"> CEP: </label> <br>
+                <input id="cep" type="number" placeholder="Digite o seu CEP" required> <br>
+                <label for="telefixo"> Telefone Fixo:: </label> <br>
+                <input id="telefixo" type="tel" placeholder="Digite o seu Telefone"> <br>
+                <label for="phone"> Telefone celular:: </label> <br>
+                <input id="phone" type="tel" placeholder="Digite o seu Telefone" required> <br>
+                <div id="paginas">
+                    <a href="index.html" class="last-page"> Voltar</a>
+                </div>
+                <input id="enviar" type="submit" value="Enviar" onclick="enviada2()"> <br>
+            </form>
+
+        </div>
+
+    </body>
+    <script src="script/script2.js"> </script>
+
+</html>
